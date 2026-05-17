@@ -1,0 +1,238 @@
+body{
+   font-family: 'Playfair Display', serif;
+}
+
+.main-container{
+    width: 100%;
+}
+.flex-container{
+    width: 100%;
+    display: flex;       /* we Use the FlexBox*/
+    background-color: black;
+    height: 100px;
+}
+
+.menu{
+    min-width: 200px;
+    color: #c8b79a;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 40px;
+    transition: 0.3s;
+}
+
+.menu:hover{
+    color: white;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.nav-item{
+    color:rgb(68, 60, 49);
+    position: relative;
+}
+.dropdown-box{
+    color:darkgoldenrod;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color:rgba(30,30,30,0.55);
+    width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 10;
+    gap: 80px;
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+.dropdown-column{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.dropdown-title{
+    color: rgb(250, 248, 243);
+    font-weight: bold;
+    gap: 7px;
+}
+
+.nav-item:hover .dropdown-box{
+    display: flex;                 /* for put the row , it should be flex not block*/
+}
+.image-container{
+ display: flex;
+ position: relative;
+ text-align: center;
+}
+#banner-image{
+    width: 100%;   /* If you would like to put the size of image  the same page */
+    opacity: 0.7;  /* if you would like to blure image */
+}
+.banner-title{
+    position:absolute;
+    top: 35%;
+    left: 32%;
+    bottom: 35%;
+    right: 40%;
+    font-size: 6em;
+    color:rgb(68, 60, 49);
+}
+.banner-subtitle{
+    position:absolute;
+    top: 48%;
+    left: 32%;
+    bottom: 35%;
+    right: 40%;
+    font-size: 1em;
+    color:rgb(68, 60, 49);
+}
+.Product-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 50px;
+    flex-direction: row;
+    margin-left: auto;
+}
+.Product{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    background-color:#c8b79a;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.Product:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+#Image-purse{
+    width: 40px; ;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+#product-text{
+      color:white;
+      font-weight: bold;
+      font-size: 2em;
+      font-family: 'Playfair Display', serif;
+}
+
+.Product-heading{
+     display: flex;
+     widows: 100%;
+     height: 100px;
+     color:goldenrod;
+     background-color:black;
+     font-size: 2em;
+    font-family: 'Playfair Display', serif;
+     margin-bottom: 50px;
+}
+
+.Product-title{
+    margin-left: 45%;
+    margin-top: 25px;
+}
+
+.portfolio-heading{
+    display: flex;
+    widows: 100%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.portfolio-title{
+    display: flex;
+    widows: 100%;
+    height: 100px;
+    font-size: 2em;
+    margin-bottom: 150px;
+    font-family: 'Playfair Display', serif;
+    margin-left: 35%;
+    color:goldenrod;
+}
+#portfolioimg{
+    width: 490px; ;
+    height: 490px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+#banner-image{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.portfolio-name{
+    display: flex;
+    margin-right: 100px;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    widows: 100%;
+    margin-left: 570px;
+    color:goldenrod;
+
+}
+
+ /* for Line between two title*/
+.section-line {    
+  width: 50%;
+  height: 1px;
+  background-color: #c8b79a;
+  margin: 20px auto;
+  position: relative;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 280px;
+    background-color: #f1f1f1;
+}
+
+.section-line span {
+  width: 12px;
+  height: 12px;
+  background-color: #c8b79a;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+}
+
+ /* Resources Menu also for Hover */
+
+.resources-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+    background-color: #2f2d2a;
+    border-radius: 60px;
+    padding: 20px;
+}
+
+.portfolio-info{
+    color: white;
+    font-size: 2em;
+    padding: 25px 55px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.portfolio-info:hover{
+    background-color: rgb(117,111,111);
+    cursor: pointer;
+}
